@@ -37,6 +37,12 @@ Running
 An example of running the pipeline is like this:
 
 
-    bpipe run -p target_bed=target_regions.bed -p ref=gatk.ucsc.hg19.fasta exome_depth_pipeline.groovy *.bam
+    bpipe run -p target_bed=target_regions.bed \
+              -p ref=gatk.ucsc.hg19.fasta \
+              exome_depth_pipeline.groovy *.bam
 
 Of course, you need to replace the target regions, reference fasta and BAM files with your own.
+
+On a small target region this takes about 2 minutes to run on a moderately powerful server. If you do not have 
+enough RAM to run all the chromosomes in parallel, you can limit throughput with -n <num threads> as an argument
+to Bpipe.
