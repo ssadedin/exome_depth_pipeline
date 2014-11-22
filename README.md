@@ -4,7 +4,7 @@ exome_depth_pipeline
 A Bpipe pipeline for easily running ExomeDepth.
 
 Overview
-========
+--------
 
 ExomeDepth is a fantastic tool for identifying CNVs in exome or targeted sequencing data.
 
@@ -17,7 +17,7 @@ the following:
   * the human genome reference FASTA to which the BAM files were aligned
 
 Install
-=======
+------
 
 1.  To run the pipeline you need to install Bpipe:
 
@@ -32,7 +32,7 @@ git clone git@github.com:ssadedin/exome_depth_pipeline.git
 come with ExomeDepth.
 
 Running
-=======
+-------
 
 An example of running the pipeline is like this:
 
